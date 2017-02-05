@@ -1,0 +1,26 @@
+<aura:component controller="OpportunityCls">
+    <aura:attribute name="opportunities" type="Opportunity[]" default=""/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div>
+        <table class="table table-sm table-inverse">
+            <thead  class="bg-primary text-white">
+                <tr>
+                    <th><strong>Opportunity Name</strong></th>
+                    <th><strong>Stage Name </strong></th>
+                    <th><strong>Close Date</strong></th>
+                    <th><strong>Created Date </strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.opportunities}" var="opp">
+                    <tr>
+                        <td>{!opp.Name}</td>
+                        <td>{!opp.StageName}</td>
+                        <td><c:OpportunityListTimeAgo timeAgo="{!opp.CloseDate}"/></td>
+                        <td><c:OpportunityListTimeAgo timeAgo="{!opp.CreatedDate}"/></td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+    </div>
+</aura:component>

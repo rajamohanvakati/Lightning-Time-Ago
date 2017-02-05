@@ -1,0 +1,13 @@
+{
+    "projectName": "Lightning Time Ago",
+    "username": "rvakati@gmail.com",
+    "id": "1895c650-eb62-11e6-b84d-0da09b52bb11",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://har-dev-ed.my.salesforce.com",
+    "workspace": "C:\\Users\\rajamohan\\Documents",
+    "subscription": [
+        "ApexClass"
+    ]
+}
